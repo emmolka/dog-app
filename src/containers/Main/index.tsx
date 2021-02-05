@@ -40,7 +40,8 @@ const Main = (): React.ReactElement => {
       setLoading(false);
       setBreedOptions(getAllBreeds(response2.data.message));
     } catch (e) {
-      alert(e);
+      setLoading(false);
+      alert("Error occured, please try again");
     }
   };
 
@@ -56,7 +57,8 @@ const Main = (): React.ReactElement => {
       setLoading(false);
       setImageUrl(response.data.message);
     } catch (e) {
-      alert(e);
+      setLoading(false);
+      alert("Error occured, please try again");
     }
   };
 
@@ -75,7 +77,8 @@ const Main = (): React.ReactElement => {
       setImageUrl(response.data.message);
       return response.data;
     } catch (e) {
-      alert("Error appeared, please refresh page and check connection");
+      setLoading(false);
+      alert("Error occured, please try again");
       return null;
     }
   };
