@@ -6,7 +6,7 @@ export const FullPageWrapper = styled.div`
   display: flex;
   justify-content: center;
   padding: 30px;
-  background-color: #e2e5de;
+  background-color: #2f343a;
 `;
 
 export const ApplicationWrapper = styled.div`
@@ -15,7 +15,7 @@ export const ApplicationWrapper = styled.div`
   max-height: 600px;
   width: 100%;
   max-width: 400px;
-  background-color: #b2beb5;
+  background-color: #717d8c;
   display: flex;
   flex-direction: column;
   position: relative;
@@ -24,7 +24,7 @@ export const ApplicationWrapper = styled.div`
 export const ElementsWrapper = styled.div`
   height: 60%;
   width: 100%;
-  background-color: #b2beb5;
+  background-color: #4e586e;
   display: flex;
   justify-content: space-around;
   align-items: center;
@@ -41,8 +41,17 @@ export const ElementsWrapper = styled.div`
     top: -20px;
     left: 0;
     height: 50px;
-    background-color: #b2beb5;
+    background-color: #4e586e;
     width: 100%;
     border-radius: 30%;
   }
+`;
+
+export const ButtonSectionWrapper = styled.div`
+  min-height: 200px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 `;

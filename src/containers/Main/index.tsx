@@ -5,7 +5,8 @@ import axios, { AxiosResponse } from "axios";
 import {
   FullPageWrapper,
   ApplicationWrapper,
-  ElementsWrapper
+  ElementsWrapper,
+  ButtonSectionWrapper
 } from "../../components/Wrappers";
 
 import {
@@ -119,18 +120,20 @@ const Main = (): React.ReactElement => {
               />
             )}
           />
-          {loading ? (
-            <Loader type="Circles" color="#FFF" height={80} width={80} />
-          ) : (
-            <>
-              <StyledButton onClick={() => getRandomBreedImage()}>
-                Get random {breedName} image
-              </StyledButton>
-              <StyledButton onClick={getRandomImage}>
-                Get random dog image
-              </StyledButton>
-            </>
-          )}
+          <ButtonSectionWrapper>
+            {loading ? (
+              <Loader type="Circles" color="#FFF" height={80} width={80} />
+            ) : (
+              <>
+                <StyledButton onClick={() => getRandomBreedImage()}>
+                  Get random {breedName} image
+                </StyledButton>
+                <StyledButton onClick={getRandomImage}>
+                  Get random dog image
+                </StyledButton>
+              </>
+            )}
+          </ButtonSectionWrapper>
         </ElementsWrapper>
       </ApplicationWrapper>
     </FullPageWrapper>

@@ -13,20 +13,26 @@ export const StyledImage = styled.img`
 `;
 
 export const StyledButton = styled(Button)`
-  margin-top: 45px;
-  background-color: #f5f5f5f5 !important;
+  margin-top: 10px !important;
+  background-color: #2f343a !important;
   text-transform: none !important;
+  color: #dddddd !important;
 `;
 
 export const H1 = styled.h1`
-  font-size: 35px;
+  color: #dddddd;
+  font-size: 20px;
+  @media (min-width: 500px) {
+    font-size: 30px;
+  }
 `;
 
 export const StyledAutocomplete = styled(Autocomplete)`
   z-index: 1;
   overflow-x: visible !important;
-  margin-top: 20px;
-  width: 300px;
+  margin-top: 10px;
+  width: 100%;
+  max-width: 300px;
   overflow: visible;
   // some quick styles to overwrite material ui styles
   && .MuiOutlinedInput-notchedOutline {
@@ -47,9 +53,9 @@ export const StyledAutocomplete = styled(Autocomplete)`
 
 export const StyledTextField = styled(TextField)`
   label {
-    color: #676767;
+    color: #dddddd;
   }
   && .MuiAutocomplete-input {
-    color: #676767;
+    color: #dddddd;
   }
 `;
