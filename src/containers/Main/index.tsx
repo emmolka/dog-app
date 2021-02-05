@@ -52,7 +52,9 @@ const Main = (): React.ReactElement => {
         message: string;
         status: string;
       }> = await axios.get(
-        `https://dog.ceo/api/breed/${breed.toLowerCase()}/images/random`
+        `https://dog.ceo/api/breed/${breed
+          .toLowerCase()
+          .replace(/ /g, "/")}/images/random`
       );
       setLoading(false);
       setImageUrl(response.data.message);
@@ -77,7 +79,6 @@ const Main = (): React.ReactElement => {
       setImageUrl(response.data.message);
       return response.data;
     } catch (e) {
-      setLoading(false);
       alert("Error occured, please try again");
       return null;
     }
