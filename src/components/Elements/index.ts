@@ -22,6 +22,7 @@ export const StyledButton = styled(Button)`
 export const H1 = styled.h1`
   color: #dddddd;
   font-size: 20px;
+  margin-top: 5px;
   @media (min-width: 500px) {
     font-size: 30px;
   }
